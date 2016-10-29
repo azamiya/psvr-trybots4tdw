@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>three.js webgl - materials - video</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<style>
+			body {
+				background-color: #000;
+				color: #fff;
+				margin: 0px;
+				overflow: hidden;
+				font-family:Monospace;
+				font-size:13px;
+				text-align:center;
+				font-weight: bold;
+				text-align:center;
+			}
+
+			a {
+				color:#0078ff;
+			}
+
+			#info {
+				color:#fff;
+				position: absolute;
+				top: 5px; width: 100%;
+				z-index:100;
+			}
+
+		</style>
+	</head>
+	<body>
+
+		<div id="info">
+			<a href="http://threejs.org" target="_blank">three.js</a> - webgl video demo. playing <a href="http://durian.blender.org/" target="_blank">sintel</a> trailer
+		</div>
+
+		<script src="./three.min.js"></script>
+		<script src="./StereoEffect.js"></script>
+		<script src="./polyfills.js"></script>
+		<script src="./OrbitControls.js"></script>
+
+		<video id="video" autoplay loop webkit-playsinline style="display:none">
+		</video>
+
+		<script src="./main.js"></script>
+
+	</body>
+</html>
