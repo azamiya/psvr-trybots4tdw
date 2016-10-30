@@ -47,7 +47,7 @@ function init() {
     var material = new THREE.MeshBasicMaterial( { map: texture } );
     var plane = new THREE.Mesh( geometry, material );
     plane.position.y = 0 ;
-    plane.rotation.y = Math.PI;
+    //plane.rotation.y = Math.PI;
     //plane.rotation.z = Math.PI;
     scene.add( plane );
 
